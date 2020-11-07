@@ -2,9 +2,9 @@ import React from 'react';
 
 type ButtonPropsType = {
     id: number
-    value:any
-    addValue?: any
-    changeDisRes?: any
+    value:number
+    addValue?: ()=>void
+    changeDisRes?: ()=>void
     onClick?:any
     maxValue?:any
 

@@ -1,11 +1,13 @@
 .App {
   text-align: center;
   border:1px solid #000;
-  width: 300px;
+  width: 500px;
   margin: 20px auto;
   background: #3f5985;
   border:3px solid #a2c0ee;
   border-radius: 10px;
+  color: white;
+  padding: 10px;
 }
 .wrapper{
   display: flex;
@@ -22,4 +24,7 @@ span{
 
 .red{
   color: red;
+}
+.inputWrapper{
+
 }
