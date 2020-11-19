@@ -25,7 +25,6 @@ function App() {
     }
 
     let changeValueStart = (e: ChangeEvent<HTMLInputElement>) => {
-        //setStartValue(0)
         let startValue = e.currentTarget.value
         setStartValue(Number(startValue))
         localStorage.setItem("startValue", startValue)
@@ -35,10 +34,9 @@ function App() {
     }
 
     const setInputValue = (startValue: number, maxValue: number) => {
-        value = startValue
-        setValue(value)
-        if (value >= maxValue) {
-            setError("Введите корректные значения.Они не должны быть равными")
+        setValue(startValue)
+        if (startValue === maxValue) {
+            setError("Значения не должны быть одинаковыми")
             setValue(0)
         }
         if (maxValue < startValue) {
@@ -65,12 +63,9 @@ function App() {
                 <div  className={"buttonWrapper wrapper"}>
                     <Button id={1} value={value} addValue={addValue} maxValue={maxValue} startValue={startValue} />
                     <Button id={2} value={value} changeDisRes={changeDisRes} />
-
                 </div>
             </div>
-
         </div>
-
     );
 }
 
