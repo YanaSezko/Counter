@@ -34,20 +34,22 @@ span {
   display: block;
   margin: 20px;
   color: white;
-  background: rgb(100, 87, 87);
+  background: rgb(77, 67, 67);
   padding: 20px;
   border-radius: 10px;
   -webkit-box-shadow: inset 0px 0px 26px 10px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 26px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .red {
   font-size: 24px;
   color: rgb(255, 72, 72);
+  -webkit-box-shadow: 0px 0px 26px 10px rgba(255, 72, 72, 0.507);
+  box-shadow: 0px 0px 26px 10px rgba(255, 72, 72, 0.521);
 }
 
 .buttonWrapper {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
